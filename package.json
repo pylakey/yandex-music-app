@@ -1,6 +1,6 @@
 {
   "name": "yandex-music-app",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "author": "pylakey",
   "description": "just webview for yandex music with native features",
   "homepage": "https://yandexmusic.pylakey.com",
@@ -11,42 +11,32 @@
   },
   "main": "src/main/index.js",
   "scripts": {
-    "prestart": "webpack",
     "start": "electron .",
-    "prebuild": "webpack",
     "build": "electron-builder",
     "publish": "electron-builder -p always",
-    "postinstall": "$(yarn bin)/electron-builder install-app-deps",
-    "watch": "webpack --watch --mode=development"
+    "postinstall": "$(yarn bin)/electron-builder install-app-deps"
   },
   "devDependencies": {
-    "css-loader": "^3.2.0",
-    "electron": "^7.1.7",
-    "electron-builder": "^21.2.0",
-    "vue-loader": "^15.9.6",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.12",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.8"
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1"
   },
   "dependencies": {
-    "electron-media-service": "tidal-engineering/electron-media-service",
-    "electron-settings": "^3.2.0",
+    "electron-media-service": "tidal-engineering/electron-media-service#master",
+    "electron-settings": "^4.0.2",
     "github-api": "^3.4.0",
-    "node-addon-api": "^1.7.1",
-    "semver": "^7.3.4",
-    "vue": "^2.6.12"
+    "node-addon-api": "^3.1.0",
+    "semver": "^7.3.4"
   },
   "build": {
-    "productName": "Yandex Music (Unofficial)",
+    "productName": "Яндекс.Музыка",
     "appId": "com.pylakey.yandexmusicapp",
     "mac": {
       "category": "public.app-category.music",
       "target": [
-        "zip",
         "dmg"
       ],
-      "icon": "static/icon.icns"
+      "icon": "static/icon.icns",
+      "electronLanguages": "ru"
     },
     "extraResources": [
       "static/tray*.png"
