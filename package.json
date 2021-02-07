@@ -1,13 +1,13 @@
 {
   "name": "yandex-music-app",
-  "version": "1.6.0-alpha.1",
-  "author": "juvirez",
+  "version": "1.6.0",
+  "author": "pylakey",
   "description": "just webview for yandex music with native features",
-  "homepage": "https://yandex-music.juvs.dev",
+  "homepage": "https://yandexmusic.pylakey.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/juvirez/yandex-music-app.git"
+    "url": "https://github.com/pylakey/yandex-music-app.git"
   },
   "main": "src/main/index.js",
   "scripts": {
@@ -23,24 +23,23 @@
     "css-loader": "^3.2.0",
     "electron": "^7.1.7",
     "electron-builder": "^21.2.0",
-    "vue-loader": "^15.7.1",
+    "vue-loader": "^15.9.6",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.10",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.8"
   },
   "dependencies": {
-    "electron-google-analytics": "^0.1.0",
-    "electron-media-service": "auryo/electron-media-service#8e5af9c",
+    "electron-media-service": "tidal-engineering/electron-media-service",
     "electron-settings": "^3.2.0",
-    "github-api": "^3.2.2",
+    "github-api": "^3.4.0",
     "node-addon-api": "^1.7.1",
-    "semver": "^7.2.1",
-    "vue": "^2.6.10"
+    "semver": "^7.3.4",
+    "vue": "^2.6.12"
   },
   "build": {
     "productName": "Yandex Music (Unofficial)",
-    "appId": "com.github.juvirez.yandexmusicapp",
+    "appId": "com.pylakey.yandexmusicapp",
     "mac": {
       "category": "public.app-category.music",
       "target": [
