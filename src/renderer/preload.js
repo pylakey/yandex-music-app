@@ -107,6 +107,7 @@ async function showNotification(track) {
         null;
 
     new Notification(track.title, {
+        title: track.title,
         body: track.artists.map((a) => a.title).join(", "),
         icon: coverUrl,
         silent: true,
